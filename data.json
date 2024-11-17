@@ -1,0 +1,474 @@
+{
+  "tests": [
+    {
+      "id": "1",
+      "title": "Node.js Basics",
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "What is Node.js primarily used for?",
+          "options": [
+            "Frontend Development",
+            "Backend Development",
+            "Database Management"
+          ],
+          "correct": "Backend Development"
+        },
+        {
+          "id": "1.2",
+          "text": "Which of the following is NOT a core module in Node.js?",
+          "options": [
+            "fs",
+            "http",
+            "axios"
+          ],
+          "correct": "axios"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "2",
+      "title": "Express.js Basics",
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "Which HTTP method is used to create a new resource in Express?",
+          "options": [
+            "GET",
+            "POST",
+            "PUT"
+          ],
+          "correct": "POST"
+        },
+        {
+          "id": "2.2",
+          "text": "How do you create an Express application in Node.js?",
+          "options": [
+            "express.create()",
+            "express()",
+            "new express()"
+          ],
+          "correct": "express()"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "3",
+      "title": "TCP & UDP",
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "Which of the following is a characteristic of TCP?",
+          "options": [
+            "Connection-oriented",
+            "Connectionless",
+            "Faster than UDP"
+          ],
+          "correct": "Connection-oriented"
+        },
+        {
+          "id": "3.2",
+          "text": "Which protocol is typically used for real-time applications like streaming?",
+          "options": [
+            "TCP",
+            "UDP",
+            "HTTP"
+          ],
+          "correct": "UDP"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "4",
+      "title": "Browser Networking",
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "What does DNS stand for?",
+          "options": [
+            "Dynamic Network Service",
+            "Domain Name System",
+            "Data Network System"
+          ],
+          "correct": "Domain Name System"
+        },
+        {
+          "id": "4.2",
+          "text": "Which protocol does the browser use to fetch web pages?",
+          "options": [
+            "FTP",
+            "HTTP",
+            "SMTP"
+          ],
+          "correct": "HTTP"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "5",
+      "title": "Wireless Networking",
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "Which wireless communication standard is most commonly used for Wi-Fi?",
+          "options": [
+            "Bluetooth",
+            "Zigbee",
+            "802.11"
+          ],
+          "correct": "802.11"
+        },
+        {
+          "id": "5.2",
+          "text": "Which frequency band is commonly used for Wi-Fi networks?",
+          "options": [
+            "2.4 GHz and 5 GHz",
+            "1.5 GHz and 3 GHz",
+            "5 GHz and 6 GHz"
+          ],
+          "correct": "2.4 GHz and 5 GHz"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "6",
+      "title": "Node.js Event Loop",
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "What is the purpose of the Node.js event loop?",
+          "options": [
+            "Managing asynchronous operations",
+            "Handling HTTP requests",
+            "Scheduling database queries"
+          ],
+          "correct": "Managing asynchronous operations"
+        },
+        {
+          "id": "6.2",
+          "text": "Which of the following methods can be used to handle asynchronous code in Node.js?",
+          "options": [
+            "Promises",
+            "Callbacks",
+            "All of the above"
+          ],
+          "correct": "All of the above"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "7",
+      "title": "Express.js Middleware",
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "What is middleware in Express.js?",
+          "options": [
+            "A function that handles HTTP requests",
+            "A library for connecting databases",
+            "A component for rendering views"
+          ],
+          "correct": "A function that handles HTTP requests"
+        },
+        {
+          "id": "7.2",
+          "text": "Which method is used to add middleware to an Express app?",
+          "options": [
+            "app.use()",
+            "app.add()",
+            "app.middleware()"
+          ],
+          "correct": "app.use()"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "8",
+      "title": "TCP & UDP Ports",
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "Which port is commonly used for HTTP?",
+          "options": [
+            "80",
+            "443",
+            "8080"
+          ],
+          "correct": "80"
+        },
+        {
+          "id": "8.2",
+          "text": "Which protocol uses port 53 for DNS?",
+          "options": [
+            "TCP",
+            "UDP",
+            "Both TCP and UDP"
+          ],
+          "correct": "Both TCP and UDP"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "9",
+      "title": "Browser Networking",
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "What is the main function of a browser's cache?",
+          "options": [
+            "Speed up the loading of websites",
+            "Store sensitive information",
+            "Prevent network traffic"
+          ],
+          "correct": "Speed up the loading of websites"
+        },
+        {
+          "id": "9.2",
+          "text": "What is the role of a proxy server in networking?",
+          "options": [
+            "Forwarding requests on behalf of a client",
+            "Encrypting data",
+            "Serving as a DNS resolver"
+          ],
+          "correct": "Forwarding requests on behalf of a client"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "10",
+      "title": "Wireless Networking Security",
+      "questions": [
+        {
+          "id": "10.1",
+          "text": "Which security protocol is commonly used to protect Wi-Fi networks?",
+          "options": [
+            "WEP",
+            "WPA",
+            "SSL"
+          ],
+          "correct": "WPA"
+        },
+        {
+          "id": "10.2",
+          "text": "What does the 'SSID' in a wireless network stand for?",
+          "options": [
+            "Service Set Identifier",
+            "Secure Set Identifier",
+            "Simple Service Indicator"
+          ],
+          "correct": "Service Set Identifier"
+        }
+      ],
+      "results": []
+    },
+    {
+      "id": "1731837097437",
+      "title": "teeest",
+      "questions": [
+        {
+          "id": "1731836552805",
+          "text": "mek",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": "1"
+        },
+        {
+          "id": "1731836590371",
+          "text": "erku",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": "2"
+        },
+        {
+          "id": "1731836610695",
+          "text": "ireq",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": "3"
+        }
+      ],
+      "results": [],
+      "shuffle": false
+    },
+    {
+      "id": "1731837245734",
+      "title": "test",
+      "questions": [
+        {
+          "id": "1731837183238",
+          "text": "aaa",
+          "options": [
+            "aa",
+            "erger",
+            "ewgerg"
+          ],
+          "correct": "ewgerg"
+        },
+        {
+          "id": "1731837198083",
+          "text": "bbb",
+          "options": [
+            "ertg3rg54",
+            "ergerger"
+          ],
+          "correct": ""
+        },
+        {
+          "id": "1731837210708",
+          "text": "ccc",
+          "options": [
+            "ergerg",
+            "ergerge4th",
+            "ethet"
+          ],
+          "correct": "ergerge4th"
+        }
+      ],
+      "results": [],
+      "shuffle": false
+    },
+    {
+      "id": "1731838476061",
+      "title": "js",
+      "questions": [
+        {
+          "id": "1731838206238",
+          "text": "which is not a js type",
+          "options": [
+            "boolean",
+            "null",
+            "scope"
+          ],
+          "correct": "scope"
+        },
+        {
+          "id": "1731838266467",
+          "text": "which is a typeOf \"undefined\"",
+          "options": [
+            "undefined",
+            "string",
+            "NaN"
+          ],
+          "correct": "string"
+        },
+        {
+          "id": "1731838410230",
+          "text": "which one corresponds to js",
+          "options": [
+            "dynamic scoping",
+            "lexical scoping"
+          ],
+          "correct": "dynamic scoping"
+        }
+      ],
+      "results": [],
+      "shuffle": true
+    },
+    {
+      "id": "1731840311997",
+      "title": "whebfjwhebfjwh",
+      "questions": [
+        {
+          "id": "1731840263072",
+          "text": "eerkjge",
+          "options": [
+            "ergerg",
+            "ergergreg",
+            "grtht"
+          ],
+          "correct": "ergerg"
+        },
+        {
+          "id": "1731840279036",
+          "text": "poifeprogpr",
+          "options": [
+            "jwlekfjwlk",
+            "wlkejlwkejrl",
+            "erlekrnglke"
+          ],
+          "correct": "jwlekfjwlk"
+        },
+        {
+          "id": "1731840294953",
+          "text": "q;oek't3j",
+          "options": [
+            "425h45hrth",
+            "rthre",
+            "rthrwhte5th"
+          ],
+          "correct": "rthre"
+        }
+      ],
+      "results": [],
+      "shuffle": false
+    }
+  ],
+  "users": [
+    {
+      "id": "b80f",
+      "nickname": "aaa"
+    },
+    {
+      "id": "61b6",
+      "nickname": "ccc"
+    },
+    {
+      "id": "50ff",
+      "nickname": "abo"
+    },
+    {
+      "id": "5e1a",
+      "nickname": "ggg"
+    },
+    {
+      "id": "41d4",
+      "nickname": "ooo"
+    },
+    {
+      "id": "c478",
+      "nickname": "rrr"
+    },
+    {
+      "id": "b866",
+      "nickname": "lll"
+    },
+    {
+      "id": "c90d",
+      "nickname": "aaac"
+    },
+    {
+      "id": "0939",
+      "nickname": "vzgo777"
+    },
+    {
+      "id": "a7d8",
+      "nickname": "grno111"
+    },
+    {
+      "id": "61ad",
+      "nickname": "smbo222"
+    },
+    {
+      "id": "dacc",
+      "nickname": "smbo"
+    }
+  ]
+}
