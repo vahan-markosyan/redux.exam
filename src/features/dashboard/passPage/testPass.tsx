@@ -8,7 +8,7 @@ interface SelectedOptions {
 }
 
 export const TestPass = () => {
-  const { id } = useParams<{ id: string }>()
+  const { id } = useParams<{id:string}>()
   const dispatch = useAppDispatch()
   const current = useAppSelector(currentTest)
   const user = sessionStorage.getItem("nickname")
@@ -92,6 +92,16 @@ export const TestPass = () => {
     }
   }
 
+  const handleSkipQuestion = (questionId: string) => {
+    setQuestions(oldQuestions => {
+      const skippedQuestion = oldQuestions.find(q => q.id == questionId)
+      if (!skippedQuestion) 
+      return oldQuestions
+      const remainingQuestions = oldQuestions.filter(q => q.id !== questionId)
+      return [...remainingQuestions, skippedQuestion]
+    })
+  }
+
   
 
   return (
@@ -126,7 +136,7 @@ export const TestPass = () => {
                       key={optionIndex}
                       onClick={() => handleOptionSelect(question.id, option)}
                       className={`p-3 rounded-md border transition-colors ${
-                        selectedOptions[question.id] === option
+                        selectedOptions[question.id] == option
                           ? "bg-blue-500 text-white"
                           : "bg-gray-200 text-gray-800 hover:bg-blue-200"
                       }`}
@@ -134,6 +144,7 @@ export const TestPass = () => {
                       {option}
                     </button>
                   ))}
+                  <button onClick={() => handleSkipQuestion(question.id)} style={{background:"red", width:"100px", height:"50px"}}>Skip</button>
                 </div>
               </div>
             ))}
@@ -164,8 +175,8 @@ export const TestPass = () => {
         <p className="text-center text-xl text-red-600 mt-10">No test found</p>
       )}
     </div>
-  );
-};
+  )
+}
 
 
 
