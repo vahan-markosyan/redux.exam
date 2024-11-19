@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
 import { useAppDispatch, useAppSelector } from "../../../app/hooks"
 import { currentTest, getTest, updateTest } from "./test.slice"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { ITest, IQuestion } from "../types"
+import StartToastifyInstance from "toastify-js"
 
 export const TestEdit = () => {
   const { id } = useParams<{ id: string }>()
   const dispatch = useAppDispatch()
   const current = useAppSelector(currentTest)
   const [editableTest, setEditableTest] = useState<ITest | null>(null)
+  const navigate = useNavigate()
 
 
   useEffect(() => {
@@ -64,8 +66,15 @@ export const TestEdit = () => {
   const handleSave = () => {
     if (editableTest) {
       dispatch(updateTest(editableTest))
-      alert("Test updated successfully!")
+      StartToastifyInstance({
+        text: "Updated succesfully!",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      }).showToast();
     }
+    navigate("/dashboard")
   }
 
   if (!editableTest) 

@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom"
 import { useAppDispatch, useAppSelector } from "../../../app/hooks"
 import { currentTest, getTest, updateTest } from "./test.slice"
 import { useEffect, useState, useRef } from "react"
+import StartToastifyInstance from "toastify-js"
 
 interface SelectedOptions {
   [questionId: string]: string
@@ -64,7 +65,13 @@ export const TestPass = () => {
         behavior: "smooth",
         block: "center",
       });
-      alert("Please complete all questions before submitting!")
+      StartToastifyInstance({
+        text: "Please answer all the questions before submitting!",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "linear-gradient(to right, #ff0000, #cc0000)",
+      }).showToast();
       return
     }
 
@@ -144,7 +151,13 @@ export const TestPass = () => {
                       {option}
                     </button>
                   ))}
-                  <button onClick={() => handleSkipQuestion(question.id)} style={{background:"red", width:"100px", height:"50px"}}>Skip</button>
+                 <button 
+                  onClick={() => handleSkipQuestion(question.id)} 
+                  className="bg-red-500 hover:bg-red-600 text-white w-24 h-12 rounded shadow-md transition duration-300"
+                >
+                  Skip
+                </button>
+
                 </div>
               </div>
             ))}
